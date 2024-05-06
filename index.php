@@ -12,7 +12,21 @@
 </head>
 <body>
     <div id="app">
+        <header></header>
 
+        <main>
+            <div class="container">
+                <!-- Card -->
+                <div class="card-container" v-for="disc in discs">
+                    <div class="img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div>[titolo album]</div>
+                    <div>[artista]</div>
+                    <div>[anno]</div>
+                </div>
+            </div>
+        </main>
     </div>
 
     
