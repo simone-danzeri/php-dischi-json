@@ -16,14 +16,16 @@
 
         <main>
             <div class="container">
-                <!-- Card -->
-                <div class="card-container" v-for="disc in discs">
-                    <div class="img-container">
-                        <img src="" alt="">
+                <div class="cards-wrapper">
+                    <!-- Card -->
+                    <div class="card-container" v-for="disc in discs">
+                        <div class="img-container">
+                            <img :src="disc.poster" alt="">
+                        </div>
+                        <div class="title">{{ disc.title }}</div>
+                        <div class="author">{{ disc.author }}</div>
+                        <div class="year">{{ disc.year }}</div>
                     </div>
-                    <div>[titolo album]</div>
-                    <div>[artista]</div>
-                    <div>[anno]</div>
                 </div>
             </div>
         </main>
